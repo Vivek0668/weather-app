@@ -1,6 +1,6 @@
 import snowy from "./assets/snowyind.gif";
 import rainy from "./assets/rain.gif";
-import sunny from "./assets/sunnyind.jpg";
+import sunny from "./assets/sunnyc.png";
 import cloudy from "./assets/cloud.gif";
 import Sback from "./assets/sunny.png";
 import Mback from "./assets/mist.gif";
@@ -11,6 +11,7 @@ import loadinggif from "./assets/loading.gif"
 import Hback from "./assets/haze.gif";
 import Clback from "./assets/sky-4583.gif";
 import haze from "./assets/hazec.gif";
+import clear from  "./assets/clearc.png";
 
 
 import { useEffect, useState } from 'react'
@@ -46,12 +47,13 @@ export default function App() {
 
 
  const weatherImages = {
-Clear : sunny, 
+Clear : clear, 
 Clouds : cloudy,
 Rain : rainy,
 Snow : snowy,
 Haze : haze,
-Mist : cloudy
+Mist : cloudy,
+Sunny : sunny
 
  }
  const backgroundImages = {
@@ -199,10 +201,16 @@ const handlekeyevent = (e) => {
       </div></>
       ) 
       }
+      
      
     </div>
+    <div className="footer">
+            © Created by Vivek 2024
+          </div>
   </div>
+ 
 
     </>
   )
+   
 }
